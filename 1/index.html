@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from hopperbunny.gamegiri.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Aug 2019 11:03:29 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>Hopper Bunny</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+	<link rel="manifest" href="appmanifest.json">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128.png">
+	<link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png">
+	<link rel="icon" type="image/png" href="icons/icon-256.png">
+
+<link rel="stylesheet" href="style.css">
+<style>
+ /* Popup box BEGIN */
+   .hover_bkgr_fricc{
+   position: fixed; /* Sit on top of the page content */
+   display: none; /* Hidden by default */
+   width: 100%; /* Full width (cover the whole page) */
+   height: 100%; /* Full height (cover the whole page) */
+   top: -24; 
+   left: -5;
+   background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+   cursor: pointer; /* Add a pointer on hover */
+   }
+   .hover_bkgr_fricc .helper{
+   display:inline-block;
+   height:100%;
+   vertical-align:middle;
+   }
+   #ad div{
+   text-align:center;
+   margin: 30px auto !important;
+   }
+#x {
+        position: relative;
+    float: right;
+    background: red;
+    color: white;
+	
+	/*Portrate css */
+	    top: 9px;
+    right: 2%;
+/*   landsacape
+
+
+ top: -20px;
+    right: 8%;*/
+}
+
+#container {
+  width: 80%;
+  /*border-radius: 25px;*/
+  border: 2px solid Black;
+  padding: 15px 15px 15px 15px;
+  margin: 20px 20px 20px 20px;
+  background: #A4D3EE;
+  overflow: visible;
+  box-shadow: 5px 5px 2px #888888;
+  position: relative;
+}
+</style>
+</head>
+<body>
+<div id="fb-root"></div>
+	<script src="box2d.wasm.js"></script>
+	<noscript>
+		<div id="notSupportedWrap">
+			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
+			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+			<p class="notSupportedMessage">This content was developed in Construct - an <a href="https://www.construct.net/en">online game editor</a>.</p>
+		</div>
+	</noscript>
+	<script src="jquery-min.js"></script>
+<script>
+
+	function closeAds(){
+	$("#adcontainer").fadeTo(500,0).hide();	
+}
+
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+     googletag.defineSlot('/21696116818/Giritech_320x480_1', [320, 480], 'div-gpt-ad-1555922684463-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+<div id ="adcontainer" class="hover_bkgr_fricc">
+	<div id = "ad">
+   <div id ="closead" class="" >
+       <button  id = "x" >
+            X
+        </button>
+		</div>
+	  <div id='div-gpt-ad-1555922684463-0' style='height:480px; width:320px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1555922684463-0'); });
+</script>
+</div>
+</div>
+</div>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142313965-37"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-142313965-37');
+</script>
+
+
+<script>
+
+	$("#closead").on("touchend click",function(){
+	$("#adcontainer").fadeTo(500,0).hide();	
+})
+</script>
+	<script src="scripts/supportCheck.js"></script>
+	<script src="scripts/offlineClient.js"></script>
+	<script src="scripts/main.js"></script>
+	<script src="scripts/register-sw.js"></script>
+</body>
+
+<!-- Mirrored from hopperbunny.gamegiri.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Aug 2019 11:03:44 GMT -->
+</html>
